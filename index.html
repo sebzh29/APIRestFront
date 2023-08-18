@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Demo Rest</h1>
+  <div id="display"></div>
+  
+  <button onclick="afficherForm(event)">Ajouter un article</button>
+  <div id="form" style="display: none;">
+    <div>
+      <label>Titre</label>
+      <input type="text" id="titre">
+    </div>
+    <div>
+      <label>Contenu</label>
+      <textarea id="contenu"></textarea>
+    </div>
+    <div>
+      <label>Auteur</label>
+      <input type="text" id="auteur">
+    </div>
+    <button type="button" id="ajouter" onclick="ajouterArticle(event)">Ajouter</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
